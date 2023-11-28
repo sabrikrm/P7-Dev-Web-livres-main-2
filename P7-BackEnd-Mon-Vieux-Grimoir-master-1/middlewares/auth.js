@@ -1,6 +1,7 @@
 // Importer la bibliothèque jsonwebtoken pour gérer les jetons JWT
 const jwt = require("jsonwebtoken");
 
+
 // Exporter ce middleware comme une fonction qui sera utilisée pour vérifier les jetons d'authentification
 module.exports = (req, res, next) => {
   try {
@@ -25,5 +26,6 @@ module.exports = (req, res, next) => {
     res.status(401).json({ error });
   }
 };
-module.exports = auth;
+
+
 
