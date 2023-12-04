@@ -1,6 +1,6 @@
 const express = require('express');
 const server = express();
-const port = 3002;
+const port = 4000;
 const mongoose = require("mongoose");
 const path = require("path");
 const helmet = require("helmet");

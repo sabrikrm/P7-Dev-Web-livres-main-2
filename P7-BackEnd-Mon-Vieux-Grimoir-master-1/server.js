@@ -16,7 +16,7 @@ const normalizePort = (val) => {
   return false; // Renvoyer false pour les valeurs de port non valides
 };
 
-const port = normalizePort(process.env.PORT || "4300"); // Obtenir le port à partir des variables d'environnement ou utiliser 4300 par défaut
+const port = normalizePort(process.env.PORT || "4000"); // Obtenir le port à partir des variables d'environnement ou utiliser 4300 par défaut
 app.set("port", port); // Définir le port dans l'application Express
 
 // Gestionnaire d'erreurs pour les erreurs de démarrage du serveur
