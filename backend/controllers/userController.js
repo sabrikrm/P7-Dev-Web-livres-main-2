@@ -55,7 +55,7 @@ exports.login = (req, res, next) => {
                         userId: user._id,
                         token: jwt.sign(
                             { userId: user._id },
-                            process.env.JWT_SECRET, // Clé secrète pour le JWT, stockée dans les variables d'environnement
+                            RANDOM_TOKEN_SECRET, // Clé secrète pour le JWT, stockée dans les variables d'environnement
                             { expiresIn: '24h'} // Le token expire après 24 heures
                         )
                     });
@@ -65,4 +65,6 @@ exports.login = (req, res, next) => {
         })
         // En cas d'erreur lors de la recherche de l'utilisateur, renvoie une réponse 500 avec l'erreur
         .catch(error => res.status(500).json({ error }));
+
+        
 };
