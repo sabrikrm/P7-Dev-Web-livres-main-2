@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bookSchema = mongoose.Schema({
     userId: { 
         type: String, 
-        required: true 
+        
     },
     title: { 
         type: String, 
@@ -15,7 +15,7 @@ const bookSchema = mongoose.Schema({
     },
     imageUrl: { 
         type: String, 
-        required: true 
+        
     },
     year: { 
         type: Number, 
@@ -29,11 +29,11 @@ const bookSchema = mongoose.Schema({
         {
             userId: { 
                 type: String, 
-                required: true 
+               
             },
             grade: { 
                 type: Number, 
-                required: true 
+                
             },
         }
     ],
